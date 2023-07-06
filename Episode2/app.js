@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const myContainer = document.querySelector('.container');
-
 // const heading = React.createElement(
 //   'h1',
 //   { className: 'header-one' },
@@ -53,25 +51,34 @@ const myContainer = document.querySelector('.container');
 </div>
 </div> */
 
-const iamParent = React.createElement('div', { className: 'parent-class' }, [
-  React.createElement('div', { className: 'child-class-one' }, [
-    React.createElement('h1', { className: 'i am h1' }, 'i am child 1 h1'),
-    React.createElement('h2', { className: 'i am h2' }, 'i am child 1 h2'),
-    React.createElement('h3', { className: 'i am h3' }, 'i am child 1 h3'),
-  ]),
-  React.createElement('div', { className: 'child-class-two' }, [
-    React.createElement('h1', { className: 'i am h1' }, 'i am child 2 h1'),
-    React.createElement('h2', { className: 'i am h2' }, 'i am child 2 h2'),
-    React.createElement('h3', { className: 'i am h3' }, 'i am child 2 h3'),
-  ]),
-  React.createElement('div', { className: 'child-class-three' }, [
-    React.createElement('h1', { className: 'i am h1' }, 'i am child 3 h1'),
-    React.createElement('h2', { className: 'i am h2' }, 'i am child 3 h2'),
-    React.createElement('h3', { className: 'i am h3' }, 'i am child 3 h3'),
-  ]),
-]);
+const HeadingJsx = () => (
+  <div>
+    <h1 className="ello">I am jsx heading.👏🚀</h1>
+    <img src="{https://www.simplilearn.com/image-processing-article}" />
+    <a href="https://www.reactjs.org"> link </a>
+  </div>
+);
 
-console.log(iamParent);
-const createRoot = ReactDOM.createRoot(myContainer);
+// function based component
+// component composition writing a component within anothr component
+const HelloWorld = () => (
+  <div>
+    <HeadingJsx />
+    <h1>This is a functional component</h1>
+  </div>
+);
 
-createRoot.render(iamParent);
+const createRoot = ReactDOM.createRoot(document.querySelector('.container'));
+// This is an exxample of component composition
+const MyPractice = () => {
+  return <h1 className="Hello">My Practice Header</h1>;
+};
+
+const DetailsComponent = () => (
+  <div>
+    <MyPractice />
+    <h5>Here we called the details and above line is from the Practice</h5>
+  </div>
+);
+
+createRoot.render(<DetailsComponent />);
