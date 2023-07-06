@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "episode3",
+  "description": "Assignment:\r 1.What is JSX?\r JSX is a html like syntax which is used to write code inside our JS files.",
+  "version": "1.0.0",
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FahadShaik/NamasteReactAllEpisodes.git"
+  },
+  "author": "Fahad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FahadShaik/NamasteReactAllEpisodes/issues"
+  },
+  "homepage": "https://github.com/FahadShaik/NamasteReactAllEpisodes#readme"
+}
