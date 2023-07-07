@@ -2,7 +2,8 @@
   "dependencies": {
     "parcel": "^2.9.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1"
   },
   "name": "episode3",
   "description": "Assignment:\r 1.What is JSX?\r JSX is a html like syntax which is used to write code inside our JS files.",

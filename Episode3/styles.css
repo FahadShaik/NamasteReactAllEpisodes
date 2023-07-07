@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.my-first-header {
+    display: flex;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(151deg, rgba(0, 0, 0, 1) 0%, rgba(66, 27, 67, 0.84375) 21%, rgba(36, 12, 37, 1) 31%, rgba(66, 27, 67, 1) 38%, rgba(0, 0, 0, 1) 55%, rgba(66, 27, 67, 1) 63%, rgba(0, 0, 0, 0.8997724089635855) 94%);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-logo {
+    width: 70px;
+    height: 46px;
+    margin: 2px 3px;
+    border-radius: 3px;
+}
+
+.search-bar {
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    padding: 10px 12px;
+    background-color: #efefef;
+}
+
+.user-logo {
+    background-color: white;
+    padding: 11px;
+    margin: 3px;
+    border-radius: 19px;
+    width: 16px;
+    height: 15px;
+}
